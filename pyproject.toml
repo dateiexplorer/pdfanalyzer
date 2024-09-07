@@ -1,17 +1,14 @@
-[build-system]
-requires = ["setuptools", "setuptools-scm"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "pdfanalyzer"
 version = "0.0.1"
 description = "Extract plain text from PDF files"
+authors = [{ name = "Justus Röderer", email = "mail@dateiexplorer.de" }]
 readme = "README.md"
 requires-python = ">=3.11"
-license = { file = "LICENSE" }
-authors = [
-    { name = "Justus Röderer", email = "mail@dateiexplorer.de" },
-]
 dependencies = [
-    "PyMuPDF >= 1.23.7"
+    "PyMuPDF >= 1.23.7",
 ]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
